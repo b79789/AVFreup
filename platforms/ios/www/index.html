@@ -3,23 +3,24 @@
     Brian Stacks
     AVF==1312
     11/25/2013
+    android version
 -->
 
 <html manifest="/cache.manifest">
 <head>
     <meta charset="utf-8">
     <meta content="index, follow" name="robots">
-    <meta content="user-scalable=no, width=device-width, initial-scale=1.0"
-    name="viewport">
+    <meta content="user-scalable=no, width=device-width, initial-scale=1.0", name="viewport">
     <meta content="True" name="HandheldFriendly">
     <meta content="320" name="MobileOptimized">
-    
-    <link href="css/jquery.mobile-1.3.2.min.css"rel="stylesheet">
+    <link rel="stylesheet" href="css/themes/AVFtheme.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+    <link href="css/jquery.mobile.structure-1.3.2.min.css"rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head> 
    <body>
-    <div data-role="page" data-title="View Source: Home" id="home" >
-        <div data-id="vs_header" data-position="fixed" data-role="header" >
+    <div data-role="page" data-title="View Source: Home" id="home" data-theme="a">
+        <div data-id="vs_header" data-position="fixed" data-role="header" id="header" >
             <h1>iAmHereNow</h1>
         </div><!-- header 1-->
         <div data-role="content">
@@ -28,25 +29,25 @@
             <section>
             	<div>
                     <h4>Control Panel</h4><!--browse section-->
-                    <ul data-role="listview" data-inset="true">
-                        <li><a href="#page2"><img src="img/InstaIcon.png"alt="Names">InstagramIt</a></li>
-                        <li> <a href="#page3"><img src="img/Twitter.jpg"alt="Places">TweetIt</a></li>
-                        <li><a href="#page4"><img src="img/mapicon.png"alt="Times">MapIt</a></li>
-                        <li><a href="#page5"><img src="img/places.png"alt="how">ShowMe</a></li>
-                        <li><a href="#page6"><img src="img/question.png"alt="Dates">WhereIam</a></li>
+                    <ul data-role="listview" data-inset="true" id="frontPageList">
+                        <li><a href="#page2"  class="frontLists"><img src="img/InstaIcon.png"alt="Names">InstagramIt</a></li>
+                        <li><a href="#page3" class="frontLists"><img src="img/Twitter.jpg"alt="Places">TweetIt</a></li>
+                        <li><a href="#page4" class="frontLists"><img src="img/mapicon.png"alt="Times" data-icon="arrow-r">MapIt</a></li>
+                        <li><a href="#page5" class="frontLists"><img src="img/places.png"alt="how">ShowMe</a></li>
+                        <li><a href="#page6" class="frontLists"><img src="img/question.png"alt="Dates">WhereIam</a></li>
                     </ul>
                 </div>
             </section>           
         <h1>JSON-P Data APIs</h1>        
         <ul data-role="listview" data-inset="true">
-            <li><a href="#https://dev.twitter.com">Twitter Rest API</a></li>
-            <li><a href="#https://developers.google.com/maps/" >Google Map API</a></li>
-            <li><a href="#http://instagram.com/developer/" >Instagram API</a></li>
+            <li><a href="https://dev.twitter.com" class="frontLists">Twitter Rest API</a></li>
+            <li><a href="https://developers.google.com/maps/" class="frontLists">Google Map API</a></li>
+            <li><a href="http://instagram.com/developer/" class="frontLists">Instagram API</a></li>
         </ul>
 	     </div>
-	     <div data-id="vs_footer" data-position="fixed" data-role="footer">
+	     <div data-id="vs_footer" data-position="fixed" data-role="footer" id="footer">
             <div data-role="navbar">
-                <ul>
+                <ul id="footerList">
                     <li>
                         <a  data-icon="home" data-role=
                         "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
@@ -54,17 +55,17 @@
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#form">Research1</a>
+                        "button" href="#re1">Research1</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#news1">Research2</a>
+                        "button" href="#re2">Research2</a>
                     </li> 
 					
                     <li>
                         <a  data-icon="info" data-role=
-                        "button" href="#info1">Research3</a>
+                        "button" href="#re3">Research3</a>
                     </li> 
                                                            
                 </ul>
@@ -72,7 +73,7 @@
         </div><!-- footer -->
     </div><!-- page end -->
     
-    <div data-role="page" data-title="View Source: Home" id="page2" >
+    <div data-role="page" data-title="View Source: Home" id="page2" data-theme="a">
         <div data-id="vs_header" data-position="fixed" data-role="header" >
             <h1>iAmHereNow</h1>
         </div><!-- header 1-->
@@ -84,22 +85,22 @@
                 <ul>
                     <li>
                         <a  data-icon="home" data-role=
-                        "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
+                        "button" href="index.html">Home</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#form">Research1</a>
+                        "button" href="#re1">Research1</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#news1">Research2</a>
+                        "button" href="#re2">Research2</a>
                     </li> 
 					
                     <li>
                         <a  data-icon="info" data-role=
-                        "button" href="#info1">Research3</a>
+                        "button" href="#re3">Research3</a>
                     </li> 
                                                            
                 </ul>
@@ -107,7 +108,7 @@
         </div><!-- footer -->
     </div><!-- page end -->
     
-    <div data-role="page" data-title="View Source: Home" id="page3" >
+    <div data-role="page" data-title="View Source: Home" id="page3" data-theme="a" >
         <div data-id="vs_header" data-position="fixed" data-role="header" >
             <h1>iAmHereNow</h1>
         </div><!-- header 1-->
@@ -119,22 +120,22 @@
                 <ul>
                     <li>
                         <a  data-icon="home" data-role=
-                        "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
+                        "button" href="index.html">Home</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#form">Research1</a>
+                        "button" href="#re1">Research1</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#news1">Research2</a>
+                        "button" href="#re2">Research2</a>
                     </li> 
 					
                     <li>
                         <a  data-icon="info" data-role=
-                        "button" href="#info1">Research3</a>
+                        "button" href="#re3">Research3</a>
                     </li> 
                                                            
                 </ul>
@@ -142,7 +143,7 @@
         </div><!-- footer -->
     </div><!-- page end -->
     
-    <div data-role="page" data-title="View Source: Home" id="page4" >
+    <div data-role="page" data-title="View Source: Home" id="page4" data-theme="a">
         <div data-id="vs_header" data-position="fixed" data-role="header" >
             <h1>iAmHereNow</h1>
         </div><!-- header 1-->
@@ -154,22 +155,22 @@
                 <ul>
                     <li>
                         <a  data-icon="home" data-role=
-                        "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
+                        "button" href="index.html">Home</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#form">Research1</a>
+                        "button" href="#re1">Research1</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#news1">Research2</a>
+                        "button" href="#re2">Research2</a>
                     </li> 
 					
                     <li>
                         <a  data-icon="info" data-role=
-                        "button" href="#info1">Research3</a>
+                        "button" href="#re3">Research3</a>
                     </li> 
                                                            
                 </ul>
@@ -177,7 +178,7 @@
         </div><!-- footer -->
     </div><!-- page end -->
     
-    <div data-role="page" data-title="View Source: Home" id="page5" >
+    <div data-role="page" data-title="View Source: Home" id="page5" data-theme="a">
         <div data-id="vs_header" data-position="fixed" data-role="header" >
             <h1>iAmHereNow</h1>
         </div><!-- header 1-->
@@ -189,22 +190,22 @@
                 <ul>
                     <li>
                         <a  data-icon="home" data-role=
-                        "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
+                        "button" href="index.html">Home</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#form">Research1</a>
+                        "button" href="#re1">Research1</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#news1">Research2</a>
+                        "button" href="#re2">Research2</a>
                     </li> 
 					
                     <li>
                         <a  data-icon="info" data-role=
-                        "button" href="#info1">Research3</a>
+                        "button" href="#re3">Research3</a>
                     </li> 
                                                            
                 </ul>
@@ -212,7 +213,7 @@
         </div><!-- footer -->
     </div><!-- page end -->
 
-	<div data-role="page" data-title="View Source: Home" id="page6" >
+	<div data-role="page" data-title="View Source: Home" id="page6" data-theme="a">
         <div data-id="vs_header" data-position="fixed" data-role="header" >
             <h1>iAmHereNow</h1>
         </div><!-- header 1-->
@@ -224,24 +225,129 @@
                 <ul>
                     <li>
                         <a  data-icon="home" data-role=
-                        "button" href="index.html"class="ui-btn-active ui-state-persist">Home</a>
+                        "button" href="index.html">Home</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#form">Research1</a>
+                        "button" href="#re1">Research1</a>
                     </li>
 					
 					<li>
                         <a  data-icon="info" data-role=
-                        "button" href="#news1">Research2</a>
+                        "button" href="#re2">Research2</a>
                     </li> 
 					
                     <li>
                         <a  data-icon="info" data-role=
-                        "button" href="#info1">Research3</a>
+                        "button" href="#re3">Research3</a>
                     </li> 
                                                            
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page end -->
+    
+    <div data-role="page" data-title="View Source: Home" id="re1" data-theme="a">
+        <div data-id="vs_header" data-position="fixed" data-role="header" >
+            <h1>iAmHereNow</h1>
+        </div><!-- header 1-->
+        <div data-role="content">
+	        <h1>Research Week1</h1>
+        </div>
+        <div data-id="vs_footer" data-position="fixed" data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a  data-icon="home" data-role=
+                            "button" href="index.html">Home</a>
+                    </li>
+					
+					<li>
+                        <a  data-icon="info" data-role=
+                            "button" class="ui-btn-active ui-state-persist"href="#re1">Research1</a>
+                    </li>
+					
+					<li>
+                        <a  data-icon="info" data-role=
+                            "button" href="#re2">Research2</a>
+                    </li>
+					
+                    <li>
+                        <a  data-icon="info" data-role=
+                            "button" href="#re3">Research3</a>
+                    </li>
+                    
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page end -->
+    
+    <div data-role="page" data-title="View Source: Home" id="re2" data-theme="a">
+        <div data-id="vs_header" data-position="fixed" data-role="header" >
+            <h1>iAmHereNow</h1>
+        </div><!-- header 1-->
+        <div data-role="content">
+	        <h1>Research Week2</h1>
+        </div>
+        <div data-id="vs_footer" data-position="fixed" data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a  data-icon="home" data-role=
+                            "button" href="index.html">Home</a>
+                    </li>
+					
+					<li>
+                        <a  data-icon="info" data-role=
+                            "button" href="#re1">Research1</a>
+                    </li>
+					
+					<li>
+                        <a  data-icon="info" data-role=
+                            "button" class="ui-btn-active ui-state-persist"href="#re2">Research2</a>
+                    </li>
+					
+                    <li>
+                        <a  data-icon="info" data-role=
+                            "button" href="#re3">Research3</a>
+                    </li>
+                    
+                </ul>
+            </div><!-- navbar -->
+        </div><!-- footer -->
+    </div><!-- page end -->
+    
+    <div data-role="page" data-title="View Source: Home" id="re3" data-theme="a">
+        <div data-id="vs_header" data-position="fixed" data-role="header" >
+            <h1>iAmHereNow</h1>
+        </div><!-- header 1-->
+        <div data-role="content">
+	        <h1>Research Week3</h1>
+        </div>
+        <div data-id="vs_footer" data-position="fixed" data-role="footer">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a  data-icon="home" data-role=
+                            "button" href="index.html">Home</a>
+                    </li>
+					
+					<li>
+                        <a  data-icon="info" data-role=
+                            "button" href="#re1">Research1</a>
+                    </li>
+					
+					<li>
+                        <a  data-icon="info" data-role=
+                            "button" href="#re2">Research2</a>
+                    </li>
+					
+                    <li>
+                        <a  data-icon="info" data-role=
+                            "button" class="ui-btn-active ui-state-persist"href="#re3">Research3</a>
+                    </li>
+                    
                 </ul>
             </div><!-- navbar -->
         </div><!-- footer -->
