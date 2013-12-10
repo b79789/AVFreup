@@ -11,6 +11,8 @@
     <access origin="http//*.google.com"/>
     <access origin="https//*.google.com"/>
     <access origin="*"/>
+    <access origin="https//*.instagram.com"/>
+    <access origin="http//*.instagram.com"/>
     <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />

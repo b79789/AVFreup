@@ -40,6 +40,7 @@
     /** If you need to do any extra app-specific initialization, you can do it here
      *  -jm
      **/
+    
     NSHTTPCookieStorage* cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
 
     [cookieStorage setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
@@ -65,6 +66,7 @@
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions
 {
     CGRect screenBounds = [[UIScreen mainScreen] bounds];
+    [GMSServices provideAPIKey:@"AIzaSyDtgkkESMayh33SHPGRMhv6q32wfHOriG4"];
 
 #if __has_feature(objc_arc)
         self.window = [[UIWindow alloc] initWithFrame:screenBounds];

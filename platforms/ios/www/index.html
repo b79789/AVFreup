@@ -32,22 +32,21 @@
             	<div>
                     <h4>Control Panel</h4><!--browse section-->
                     <ul data-role="listview" data-inset="true" id="frontPageList">
-                        <li><a href="#page2" id="instaLink" class="frontLists"><img src="img/InstaIcon.png"alt="Names">InstagramIt</a></li>
-                        <li><a href="#page3" id="twitLink" class="frontLists"><img src="img/Twitter.jpg"alt="Places">TweetIt</a></li>
-                        <li><a href="#page4" class="frontLists"><img src="img/mapicon.png"alt="Times" data-icon="arrow-r">MapIt</a></li>
-                        <li><a href="#page5" id="GeoMe" class="frontLists"><img src="img/places.png"alt="how">ShowMe</a></li>
-                        <li><a href="#page6" class="frontLists"><img src="img/question.png"alt="Dates">WhereIam</a></li>
+                        <li><a href="#page2"  id="instaLink" class="frontLists"><img src="img/InstaIcon.png"alt="Names">InstagramIt</a></li>
+                        <li><a href="#page3"  id="twitLink" class="frontLists"><img src="img/where.png"alt="Places">Where Are we?</a></li>
+                        <li><a href="#page4"  id="mapMe" class="frontLists"><img src="img/mapicon.png"alt="Times" data-icon="arrow-r">MapIt</a></li>
+                        <li><a href="#page5"  id="showMe" class="frontLists"><img src="img/places.png"alt="how">ShowMe</a></li>
+                       
                     </ul>
                 </div>           
         <h1>JSON-P Data APIs</h1>        
 	        <ul data-role="listview" data-inset="true">
-	            <li><a href="https://dev.twitter.com" class="frontLists">Twitter Rest API</a></li>
 	            <li><a href="https://developers.google.com/maps/" class="frontLists">Google Map API</a></li>
 	            <li><a href="http://instagram.com/developer/" class="frontLists">Instagram API</a></li>
 	        </ul>
         </section>
 	     
-	     <div data-id="vs_footer" data-position="fixed" data-role="footer" >
+	     <div data-id="vs_footer" data-position="fixed" data-tap-toggle="false" data-role="footer" >
             <div data-role="navbar" id="footer">
                 <ul id="footerList">
                     <li>
@@ -76,16 +75,19 @@
     </div><!-- page end -->
     
     <div data-role="page" data-title="View Source: Home" id="page2" data-theme="a">
-        <div data-id="vs_header" data-position="fixed" data-role="header" id="header">
+        <header  data-id="vs_header" data-position="fixed" data-role="header" id="header">
             <h1>iAmHereNow</h1>
-        </div><!-- header 1-->
+        </header>
+        <section>
         <div data-role="content">
-	        <h1>Page 2</h1>
+	        <h1>Instagram Pics</h1>
+	 
 	        <ul id="page2ul">
 		        <li id="page2li"></li>
 	        </ul>
         </div>
-        <div data-id="vs_footer" data-position="fixed" data-role="footer">
+        </section>
+        <footer  data-id="vs_footer" data-position="fixed" data-tap-toggle="false" data-role="footer">
             <div data-role="navbar">
                 <ul>
                     <li>
@@ -110,22 +112,23 @@
                                                            
                 </ul>
             </div><!-- navbar -->
-        </div><!-- footer -->
+        </footer>
     </div><!-- page end -->
     
     <div data-role="page" data-title="View Source: Home" id="page3" data-theme="a" >
-        <div data-id="vs_header" data-position="fixed" data-role="header" id="header">
+        <header  data-id="vs_header" data-position="fixed" data-tap-toggle="false" data-role="header" id="header">
             <h1>iAmHereNow</h1>
-        </div><!-- header 1-->
+        </header>
+        <section>
         <div data-role="content">
-	        <h1>Page 3</h1>
+	        <h1 id="h1p3">Where is it?</h1>
 	        
 	        <ul>
 		        <li id="page3li"></li>
 	        </ul>
 	        </div>
-        </div>
-        <div data-id="vs_footer" data-position="fixed" data-role="footer">
+        </section>
+        <footer  data-id="vs_footer" data-position="fixed" data-role="footer">
             <div data-role="navbar">
                 <ul>
                     <li>
@@ -150,7 +153,7 @@
                                                            
                 </ul>
             </div><!-- navbar -->
-        </div><!-- footer -->
+        </footer>
     </div><!-- page end -->
     
     <div data-role="page" data-title="View Source: Home" id="page4" data-theme="a">
@@ -158,8 +161,8 @@
             <h1>iAmHereNow</h1>
         </div><!-- header 1-->
         <div data-role="content">
-	        <h1>Page 4</h1>
-	        <div id="googleMap" style="width:500px;height:380px;">
+	        <h1>Google Map</h1>
+	        <div id="googleMap" style="width:100%;height:100%;">
         </div>
         <div data-id="vs_footer" data-position="fixed" data-role="footer">
             <div data-role="navbar">
@@ -194,7 +197,7 @@
             <h1>iAmHereNow</h1>
         </div><!-- header 1-->
         <div data-role="content">
-	        <h1>Page 5</h1>
+	        <h1>Show Me</h1>
         </div>
         <div data-id="vs_footer" data-position="fixed" data-role="footer">
             <div data-role="navbar">
@@ -224,41 +227,7 @@
         </div><!-- footer -->
     </div><!-- page end -->
 
-	<div data-role="page" data-title="View Source: Home" id="page6" data-theme="a">
-        <div data-id="vs_header" data-position="fixed" data-role="header" id="header">
-            <h1>iAmHereNow</h1>
-        </div><!-- header 1-->
-        <div data-role="content">
-	        <h1>Page 6</h1>
-        </div>
-        <div data-id="vs_footer" data-position="fixed" data-role="footer">
-            <div data-role="navbar">
-                <ul>
-                    <li>
-                        <a  data-icon="home" data-role=
-                        "button" href="index.html">Home</a>
-                    </li>
-					
-					<li>
-                        <a  data-icon="info" data-role=
-                        "button" href="#re1">Research1</a>
-                    </li>
-					
-					<li>
-                        <a  data-icon="info" data-role=
-                        "button" href="#re2">Research2</a>
-                    </li> 
-					
-                    <li>
-                        <a  data-icon="info" data-role=
-                        "button" href="#re3">Research3</a>
-                    </li> 
-                                                           
-                </ul>
-            </div><!-- navbar -->
-        </div><!-- footer -->
-    </div><!-- page end -->
-    
+	    
     <div data-role="page" data-title="View Source: Home" id="re1" data-theme="a">
         <div data-id="vs_header" data-position="fixed" data-role="header" id="header">
             <h1>iAmHereNow</h1>
