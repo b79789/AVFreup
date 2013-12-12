@@ -1,70 +1,34 @@
-#header{
-	color: #7aadfa;
-	background:-webkit-linear-gradient(#3b3b3b 0%, #f5eded 47%, #cccdd9 100%);
-	font-family: cursive; 
-}
-#footer{
-	overflow: hidden;
-	color: #7aaefb;
-	background:-webkit-linear-gradient(#3b3b3b 0%, #f5eded 47%, #cccdd9 100%);
+
+.ui-page, .ui-content { 
+    background-image: url(../img/heavens_rays1.jpg) !important; 
+    background-size:cover !important;
+    -webkit-backface-visibility: hidden !important; 
 }
 
 h1{
-	color: color: #7aadfa;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	color: white;
+	padding: 20px;
+	
+}
+p{
+	color: #eaedee;
+}
+h4{
+	color: white;
+}
+#frontPageList{
+	text-align: center;
+	
+}
+a{
+	text-align: center;
+	color: black;
+	
 }
 
-#home{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
-#page2{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
-#page3{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
-#page4{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
-#page5{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
-#page6{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
-#re1{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
-#re2{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
-#re3{
-	background-image:url('../img/heavens_rays1.gif');
-	background-attachment: fixed;
-	background-size: cover;
-	
-}
+#photos { margin-left: 100px; text-align: center; }
+#photos .p { float: left; width: 170px; display: inline-block; position: relative; margin-right: 20px; margin-bottom: 12px; }
+
+#photos .p img { border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; }
+
+#photos .p .fullsize { width: 32px; height: 32px; display: block; margin-left: 70px; margin-bottom: 5px; }

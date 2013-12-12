@@ -1,0 +1,70 @@
+#header{
+	color: #7aadfa;
+	background:-webkit-linear-gradient(#3b3b3b 0%, #f5eded 47%, #cccdd9 100%);
+	font-family: cursive; 
+}
+#footer{
+	overflow: hidden;
+	color: #7aaefb;
+	background:-webkit-linear-gradient(#3b3b3b 0%, #f5eded 47%, #cccdd9 100%);
+}
+
+h1{
+	color: color: #7aadfa;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+#home{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#page2{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#page3{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#page4{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#page5{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#page6{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#re1{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#re2{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}
+#re3{
+	background-image:url('../img/heavens_rays1.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	
+}

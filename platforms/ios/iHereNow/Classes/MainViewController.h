@@ -21,8 +21,8 @@
 //  MainViewController.h
 //  HelloWorld
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___ORGANIZATIONNAME___ ___YEAR___. All rights reserved.
+//  Created by ___Brian Stacks___ on ___12/10/2013___.
+//  Copyright ___Fullsail Univ___ 2013. All rights reserved.
 //
 
 #import <Cordova/CDVViewController.h>
@@ -38,3 +38,5 @@
 
 @interface MainCommandQueue : CDVCommandQueue
 @end
+
+
