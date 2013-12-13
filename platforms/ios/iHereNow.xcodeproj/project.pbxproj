@@ -31,13 +31,21 @@
 		38228473184FA5500036B953 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38228472184FA5500036B953 /* CoreData.framework */; };
 		38228475184FA5620036B953 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38228474184FA5620036B953 /* CoreText.framework */; };
 		38228477184FA56A0036B953 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38228476184FA56A0036B953 /* GLKit.framework */; };
-		38228479184FA5720036B953 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38228478184FA5720036B953 /* ImageIO.framework */; };
 		3822847B184FA5880036B953 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3822847A184FA5880036B953 /* libc++.dylib */; };
 		3822847D184FA5BA0036B953 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3822847C184FA5BA0036B953 /* libicucore.dylib */; };
 		3822847F184FA5C70036B953 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3822847E184FA5C70036B953 /* libz.dylib */; };
 		38228481184FA5D70036B953 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38228480184FA5D70036B953 /* OpenGLES.framework */; };
 		38228483184FA5E10036B953 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38228482184FA5E10036B953 /* QuartzCore.framework */; };
 		38228485184FA5EA0036B953 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38228484184FA5EA0036B953 /* SystemConfiguration.framework */; };
+		384ECEA9185B9B5600361FA2 /* CDVDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 749963F8AB11410ABC43B572 /* CDVDevice.m */; };
+		384ECEAB185B9B5600361FA2 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 825D4467E5DB4DD78F5428D5 /* CDVLocation.m */; };
+		384ECEB1185B9B5600361FA2 /* CDVCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 69EE861F106749D2959659BB /* CDVCamera.m */; };
+		384ECEB2185B9B5600361FA2 /* CDVJpegHeaderWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B45F1126044474BB418203 /* CDVJpegHeaderWriter.m */; };
+		384ECEB6185B9B5600361FA2 /* CDVSound.m in Sources */ = {isa = PBXBuildFile; fileRef = C49ED0B8048F4777BB7075E3 /* CDVSound.m */; };
+		384ECEB8185B9B5600361FA2 /* CDVContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = D517FC37B1DA482D9E8DF4A1 /* CDVContacts.m */; };
+		384ECEB9185B9B5600361FA2 /* CDVContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BAB00EFE1DC4473846812B3 /* CDVContact.m */; };
+		384ECEBC185B9B5600361FA2 /* CDVSplashScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = EC62F920E17F424C9C97FAF3 /* CDVSplashScreen.m */; };
+		384ECEBE185B9B5600361FA2 /* CDVLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 846027353D974696BC729830 /* CDVLogger.m */; };
 		5AEE5B35173C68D80009041E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AEE5B34173C68D80009041E /* CoreLocation.framework */; };
 		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
 		894040951E814B488CE48223 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3592877D284ED2B1D44333 /* AddressBook.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -147,7 +155,6 @@
 				3822847F184FA5C70036B953 /* libz.dylib in Frameworks */,
 				3822847D184FA5BA0036B953 /* libicucore.dylib in Frameworks */,
 				3822847B184FA5880036B953 /* libc++.dylib in Frameworks */,
-				38228479184FA5720036B953 /* ImageIO.framework in Frameworks */,
 				38228477184FA56A0036B953 /* GLKit.framework in Frameworks */,
 				38228475184FA5620036B953 /* CoreText.framework in Frameworks */,
 				38228473184FA5500036B953 /* CoreData.framework in Frameworks */,
@@ -467,6 +474,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				384ECEA9185B9B5600361FA2 /* CDVDevice.m in Sources */,
+				384ECEAB185B9B5600361FA2 /* CDVLocation.m in Sources */,
+				384ECEB1185B9B5600361FA2 /* CDVCamera.m in Sources */,
+				384ECEB2185B9B5600361FA2 /* CDVJpegHeaderWriter.m in Sources */,
+				384ECEB6185B9B5600361FA2 /* CDVSound.m in Sources */,
+				384ECEB8185B9B5600361FA2 /* CDVContacts.m in Sources */,
+				384ECEB9185B9B5600361FA2 /* CDVContact.m in Sources */,
+				384ECEBC185B9B5600361FA2 /* CDVSplashScreen.m in Sources */,
+				384ECEBE185B9B5600361FA2 /* CDVLogger.m in Sources */,
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
@@ -536,7 +552,8 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "iHereNow/iHereNow-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -572,7 +589,8 @@
 				GCC_THUMB_SUPPORT = NO;
 				GCC_VERSION = "";
 				INFOPLIST_FILE = "iHereNow/iHereNow-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -619,6 +637,7 @@
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
@@ -664,6 +683,7 @@
 					"\"$(BUILT_PRODUCTS_DIR)\"",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					CoreFoundation,
